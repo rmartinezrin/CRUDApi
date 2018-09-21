@@ -28,9 +28,10 @@ GO
 -- --------------------------------------------------
 
 -- Creating table 'ItemSet'
-CREATE TABLE [dbo].[ItemSet] (
-    [Id] int IDENTITY(1,1) NOT NULL,
-    [Name] nvarchar(max)  NOT NULL
+CREATE TABLE [dbo]..[User](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](max) NOT NULL,
+	[BirthDate] [datetime] NULL
 );
 GO
 
@@ -39,7 +40,7 @@ GO
 -- --------------------------------------------------
 
 -- Creating primary key on [Id] in table 'ItemSet'
-ALTER TABLE [dbo].[ItemSet]
+ALTER TABLE [dbo].[User]
 ADD CONSTRAINT [PK_ItemSet]
     PRIMARY KEY CLUSTERED ([Id] ASC);
 GO
